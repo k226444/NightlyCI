@@ -3,12 +3,12 @@
 sudo xcode-select --switch /Applications/Xcode.app
 sudo xcodebuild -license
 
-export PATH="'"$(python3 -m site --user-base)"'/bin:$PATH"
-python3 -m pip install --user mercurial==6.1.4
+#export PATH="'"$(python3 -m site --user-base)"'/bin:$PATH"
+#python3 -m pip install --user mercurial==6.1.4
+hg pull https://hg.mozilla.org/mozilla-unified
 
-curl https://hg.mozilla.org/mozilla-central/raw-file/default/python/mozboot/bin/bootstrap.py -O
-python3 bootstrap.py --no-interactive --application-choice=browser
+#python3 bootstrap.py --no-interactive --application-choice=browser
 
-#cd mozilla-unified
+cd mozilla-unified
 
 ./mach build

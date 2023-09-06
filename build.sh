@@ -10,6 +10,6 @@ chmod +x /Users/runner/work/NightlyCI/NightlyCI/hg
 
 #python3 bootstrap.py --no-interactive --application-choice=browser
 
-cd mozilla-unified
+#cd mozilla-unified
 
-./mach build
+sh mach build
